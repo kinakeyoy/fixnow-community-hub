@@ -9,12 +9,11 @@ const services = [
   { id: 2, name: "Electricidad", icon: Zap, description: "Instalaciones eléctricas y reparación de cables", rating: 0 },
   { id: 3, name: "Carpintería", icon: Hammer, description: "Muebles, puertas y trabajos en madera", rating: 0 },
   { id: 4, name: "Pintura", icon: PaintBucket, description: "Pintura interior y exterior de viviendas", rating: 0 },
-  { id: 5, name: "Electrodomésticos", icon: Cpu, description: "Reparación de neveras, lavadoras y más", rating: 0 },
+  { id: 5, name: "Lavadoras y Neveras", icon: Cpu, description: "Reparación de lavadoras, neveras y electrodomésticos", rating: 0 },
   { id: 6, name: "Aire Acondicionado", icon: Snowflake, description: "Instalación y mantenimiento de AC", rating: 0 },
   { id: 7, name: "Cerrajería", icon: Shield, description: "Cerraduras, llaves y sistemas de seguridad", rating: 0 },
   { id: 8, name: "Parqueaderos", icon: Car, description: "Mantenimiento de garajes y parqueaderos", rating: 0 },
-  { id: 9, name: "Mantenimiento General", icon: Wrench, description: "Reparaciones generales del hogar", rating: 0 },
-  { id: 10, name: "Iluminación", icon: Lightbulb, description: "Instalación y reparación de sistemas de luz", rating: 0 }
+  { id: 9, name: "Mantenimiento General", icon: Wrench, description: "Reparaciones generales del hogar", rating: 0 }
 ];
 
 const ServiceRating = () => {
