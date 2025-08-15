@@ -7,18 +7,21 @@ const teamMembers = [
     id: 1,
     name: "Enrique Rojas",
     role: "Co-fundador",
+    profession: "Ingeniero de Sistemas",
     image: null
   },
   {
     id: 2,
     name: "Deiner Hernández",
     role: "Co-fundador", 
+    profession: "Ingeniero de Sistemas",
     image: null
   },
   {
     id: 3,
     name: "Armando Altamar",
     role: "Co-fundador",
+    profession: "Ingeniero de Sistemas",
     image: null
   }
 ];
@@ -54,8 +57,12 @@ const TeamSection = () => {
                   {member.name}
                 </h3>
                 
-                <p className="text-primary font-medium mb-4">
+                <p className="text-primary font-medium mb-1">
                   {member.role}
+                </p>
+                
+                <p className="text-muted-foreground text-sm mb-4">
+                  {member.profession}
                 </p>
                 
                 <div className="h-1 w-16 bg-gradient-primary mx-auto rounded-full"></div>
