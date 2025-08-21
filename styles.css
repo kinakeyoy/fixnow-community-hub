@@ -1,0 +1,228 @@
+/* Custom CSS for FixNow */
+
+:root {
+    --primary-color: #1c5fb8;
+    --secondary-color: #4a9d7a;
+    --accent-color: #f4a935;
+    --light-bg: #f8f9fa;
+    --gradient-primary: linear-gradient(135deg, #1c5fb8, #2980b9);
+    --gradient-hero: linear-gradient(135deg, #1c5fb8, #4a9d7a);
+    --gradient-card: linear-gradient(145deg, #ffffff, #f5f7fa);
+    --shadow-soft: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Bootstrap Colors */
+.bg-primary { background-color: var(--primary-color) !important; }
+.text-primary { color: var(--primary-color) !important; }
+.bg-secondary { background-color: var(--secondary-color) !important; }
+.text-secondary { color: var(--secondary-color) !important; }
+.text-accent { color: var(--accent-color) !important; }
+.bg-accent { background-color: var(--accent-color) !important; }
+
+/* Gradients */
+.bg-gradient-primary { background: var(--gradient-primary) !important; }
+.bg-gradient-hero { background: var(--gradient-hero) !important; }
+.bg-gradient-card { background: var(--gradient-card) !important; }
+.bg-gradient-light { background: linear-gradient(180deg, #ffffff, #f8f9fa) !important; }
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    background: var(--gradient-hero);
+}
+
+.hero-overlay {
+    background: linear-gradient(135deg, rgba(28, 95, 184, 0.9), rgba(74, 157, 122, 0.9));
+    z-index: 1;
+}
+
+.hero-bg {
+    background-image: url('src/assets/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+/* Custom Buttons */
+.btn-hero {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-premium {
+    background: var(--gradient-primary);
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-premium:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(28, 95, 184, 0.3);
+    color: white;
+}
+
+/* Feature Icons */
+.feature-icon {
+    width: 60px;
+    height: 60px;
+}
+
+/* Service Cards */
+.service-card {
+    transition: all 0.3s ease;
+    border: none !important;
+    background: var(--gradient-card);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.rating-buttons .btn {
+    width: 35px;
+    height: 35px;
+    font-size: 0.8rem;
+    margin: 0 2px;
+}
+
+.rating-buttons .btn.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Team Section */
+.team-card {
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.team-avatar {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-primary);
+    font-size: 2rem;
+}
+
+/* Form Styling */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(28, 95, 184, 0.25);
+}
+
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(28, 95, 184, 0.25);
+}
+
+/* Success Icon */
+.success-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 2.5rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Custom Shadows */
+.shadow-soft {
+    box-shadow: var(--shadow-soft) !important;
+}
+
+.shadow-medium {
+    box-shadow: var(--shadow-medium) !important;
+}
+
+/* Results Section */
+.result-card {
+    transition: all 0.3s ease;
+    background: var(--gradient-card);
+}
+
+.result-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+}
+
+.result-badge {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    position: relative;
+    top: -8px;
+    left: -8px;
+}
+
+.result-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+}
+
+/* Rating Colors */
+.rating-excellent { color: #28a745; }
+.rating-good { color: #ffc107; }
+.rating-average { color: #fd7e14; }
+.rating-poor { color: #dc3545; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-section .lead {
+        font-size: 1.2rem;
+    }
+    
+    .rating-buttons .btn {
+        width: 30px;
+        height: 30px;
+        font-size: 0.7rem;
+        margin: 0 1px;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Service Icons */
+.service-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(28, 95, 184, 0.1);
+    font-size: 1.5rem;
+}
